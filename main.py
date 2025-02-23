@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyB5ha47qhIXjI-0eNhUofY0-kr6c61JDnM")
+genai.configure(api_key="AIzaSyB4clpT3wf6MnbqKicazkCudKu3D4mcKhg")
 
 
 sys_prompt = """You are an advanced Python code reviewer. Your task is to analyze the given Python code, 
@@ -18,7 +18,7 @@ If the code is already optimal, acknowledge it and suggest best practices."""
 model = genai.GenerativeModel(model_name="gemini-1.5-flash", system_instruction=sys_prompt)
 
 
-st.title("🔍 Python Code Reviewer with Gemini AI")
+st.title(" Python Code Reviewer with Gemini AI")
 st.write("Paste your Python code below, and Gemini AI will analyze and suggest improvements.")
 
 
